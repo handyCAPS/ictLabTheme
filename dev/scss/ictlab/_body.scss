@@ -1,0 +1,46 @@
+
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: $bodyFont;
+    font-size: 16px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    background-color: #f4f4f4;
+        @media screen and (min-width: 1200px) {
+            font-size: 20px;
+        }
+}
+
+#outerWrap {
+    // padding: 0 1.618rem;
+}
+
+#contentWrap {
+    padding: 0 1.618rem;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $headerFont;
+    margin: 0;
+    @include mb();
+}
+
+.header--hero {
+    @extend .cf;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    @include mb();
+    line-height: 1.45;
+}

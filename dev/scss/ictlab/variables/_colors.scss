@@ -1,0 +1,28 @@
+
+
+
+/********************
+
+    BASE COLORS
+
+********************/
+
+$black: #111111;
+$white: #F0F0F0;
+
+
+$darkPrimaryColor:   #D32F2F;
+$primaryColor:       #F44336;
+$lightPrimaryColor:  #FFCDD2;
+$textPrimaryColor:   #FFFFFF;
+$accentColor:        #03A9F4;
+$primaryTextColor:   #212121;
+$secondaryTextColor: #727272;
+$dividerColor:       #B6B6B6;
+
+$panelColor: $primaryColor;
+
+
+
+$linkColor: $accentColor;
+$linkHoverColor: darken($linkColor, 20);

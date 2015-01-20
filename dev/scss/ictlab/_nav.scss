@@ -1,0 +1,35 @@
+
+
+.top-bar {
+    background-color: $primaryColor;
+    position: relative;
+    @include mb();
+}
+
+.nav {
+    @extend .cf;
+}
+
+.nav--list {
+    @extend .cf;
+    float: right;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    // border: 3px solid $primaryColor;
+    // border-left: none;
+    // border-right: none;
+}
+
+.nav--item {
+    float: left;
+        &:hover, &:focus {
+            background-color: $darkPrimaryColor;
+        }
+        a {
+            text-decoration: none;
+            display: block;
+            padding: 1rem 2rem;
+            color: $textPrimaryColor;
+        }
+}

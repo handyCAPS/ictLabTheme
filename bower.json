@@ -1,0 +1,21 @@
+{
+  "name": "Ictlab",
+  "version": "0.1.0",
+  "authors": [
+    "handyCAPS"
+  ],
+  "description": "Custom theme for ict-lab alphen a/d rijn",
+  "main": "index.html",
+  "keywords": [
+
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+
+  }
+}

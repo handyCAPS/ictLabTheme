@@ -1,0 +1,9 @@
+
+
+$marginBottom: 1.618rem;
+
+$gutter: 1.618rem;
+
+@mixin mb($factor: 1) {
+    margin-bottom: $marginBottom * $factor;
+}
