@@ -44,3 +44,11 @@ p {
     @include mb();
     line-height: 1.45;
 }
+
+a {
+    color: $linkColor;
+    text-decoration: none;
+        &:hover {
+            color: $linkHoverColor;
+        }
+}
