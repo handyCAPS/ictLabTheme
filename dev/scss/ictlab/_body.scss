@@ -30,8 +30,17 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: $headerFont;
+    font-size: modScale(1) + rem;
     margin: 0;
     @include mb();
+}
+
+h1 {
+    font-size: modScale(3) + rem;
+}
+
+h2 {
+    font-size: modScale(2) + rem;
 }
 
 .header--hero {

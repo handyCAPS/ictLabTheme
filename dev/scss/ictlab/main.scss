@@ -27,6 +27,21 @@
 @import 'functions';
 
 
+/*-------------------*\
+
+    OBJECTS
+
+\*-------------------*/
+
+@import 'objects/buttons';
+
+@import 'objects/icons';
+
+@import 'objects/logo';
+
+@import 'objects/panel';
+
+
 
 /*-------------------*\
 
@@ -43,6 +58,12 @@
 
 \*-------------------*/
 
+@import 'helpers';
+
 @import 'body';
 
 @import 'nav';
+
+@import 'header';
+
+@import 'content';

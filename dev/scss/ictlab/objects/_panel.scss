@@ -1,0 +1,25 @@
+
+
+.panel {
+    @include mb();
+    position: relative;
+    background-color: #fff;
+    display: inline-block;
+    color: $primaryTextColor;
+    width: 100%;
+    box-shadow: 0 1px 2px rgba(0,0,0, 0.07);
+        h2, h3 {
+            background-color: $primaryColor;
+            padding: 0.344rem modScale(1) + rem;
+            color: $textPrimaryColor;
+            font-weight: normal;
+            @include longshadow($darkPrimaryColor, 60);
+            overflow: hidden;
+        }
+        p {
+            padding: 0 modScale(1) + rem;
+               &:not(:last-of-type) {
+                    @include mb()
+                }
+        }
+}

@@ -1,0 +1,23 @@
+
+
+.content {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.content-left {
+    width: calc(66.6666666% - #{$gutter / 2});
+        @media screen and (max-width: 800px) {
+            width: 100%;
+        }
+}
+
+.content-right {
+    width: calc(33.3333333% - #{$gutter / 2});
+    margin-left: $gutter;
+        @media screen and (max-width: 800px) {
+            width: 100%;
+            margin-left: 0;
+        }
+}
+

@@ -1,0 +1,30 @@
+
+
+.icons-wrap {
+    float: right;
+    margin-right: modScale(1) + rem;
+}
+
+.social-icon-wrap {
+    display: inline-block;
+    font-size: modScale(1) + rem;
+    background-color: $primaryColor;
+    width: modScale(2) + rem;
+    height: modScale(2) + rem;
+    text-align: center;
+    overflow: hidden;
+        &:not(:last-of-type) {
+            margin-right: 0.618rem;
+        }
+        a {
+            display: block;
+            padding: 0.3 + rem;
+
+        }
+}
+
+.social-icon {
+    color: $textPrimaryColor;
+    vertical-align: middle;
+    @include longshadow($darkPrimaryColor, 40);
+}

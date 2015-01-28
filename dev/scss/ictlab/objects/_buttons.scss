@@ -1,0 +1,54 @@
+
+
+.btn {
+    z-index: 999;
+}
+
+
+.btn-action {
+    position: relative;
+    display: inline-block;
+    font-family: $bodyFont;
+    text-transform: uppercase;
+    background-color: $textPrimaryColor;
+    border: none;
+    color: $accentColor;
+    padding: 1rem 2rem;
+    margin: 0 auto;
+    font-size: modScale(2) + rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.btn-primary {
+    color: $textPrimaryColor;
+    background-color: $primaryColor;
+}
+
+
+.btn-blink {
+    position: relative;
+    overflow: hidden;
+        &:after {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: $accentColor;
+            transform: translateY(100%);
+            transition: 0.2s ease-out;
+        }
+        &:active:after {
+            transform: translateY(0);
+            // transition-delay: 1s;
+        }
+}
+
+.btn-action__overlay {
+    // font-family: $headerFont;
+    background-color: $textPrimaryColor;
+    color: $accentColor;
+    border-color: $accentColor;
+}

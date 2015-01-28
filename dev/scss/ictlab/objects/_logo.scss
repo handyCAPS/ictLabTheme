@@ -1,0 +1,12 @@
+
+
+.logo-wrap {
+    float: left;
+    margin-left: calc(#{modScale(1) + rem} - 4px);
+    @include mb();
+}
+
+.logo {
+    width: modScale(6) + rem;
+    vertical-align: middle;
+}

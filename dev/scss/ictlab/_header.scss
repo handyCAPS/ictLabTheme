@@ -1,0 +1,60 @@
+
+
+
+.search-wrap {
+    position: absolute;
+    top: 0.7rem;
+    left: modScale(1) + rem;
+    color: $textPrimaryColor;
+        i {
+            position: absolute;
+            top: 0.35rem;
+            right: 0.7rem;
+            vertical-align: baseline;
+        }
+}
+
+.search--input {
+    border: none;
+    border-radius: 1rem;
+    padding: 0.25rem 0.618rem;
+    background-color: $darkPrimaryColor;
+}
+
+
+
+.header--hero {
+    position: relative;
+    height: modScale(7) + modScale(3) + rem;
+    background-image: url('../../img/mountains.jpg');;
+    background-size: cover;
+    background-position: center 25%;
+    @include mb();
+}
+
+.header--action {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.action-wrap {
+    text-align: center;
+    @include mb();
+}
+
+.headline-wrap {
+    width: 100%;
+    clear: both;
+    text-align: center;
+    color: $textPrimaryColor;
+    position: absolute;
+    bottom: 0;
+    font-weight: normal;
+    @include longshadow($dividerColor, 4);
+        h1, h2 {
+            display: inline-block;
+            vertical-align: middle;
+            max-width: 75%;
+        }
+}
