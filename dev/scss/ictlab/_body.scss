@@ -12,6 +12,7 @@ body {
     font-family: $bodyFont;
     font-size: 16px;
     font-weight: 300;
+    color: $primaryTextColor;
     text-rendering: optimizeLegibility;
     background-color: #f4f4f4;
         @media screen and (min-width: 1200px) {
@@ -24,7 +25,7 @@ body {
 }
 
 #contentWrap {
-    padding: 0 1.618rem;
+    padding: 0 modScale(1) + rem;
 }
 
 
@@ -43,9 +44,6 @@ h2 {
     font-size: modScale(2) + rem;
 }
 
-.header--hero {
-    @extend .cf;
-}
 
 p {
     margin: 0;
@@ -60,4 +58,10 @@ a {
         &:hover {
             color: $linkHoverColor;
         }
+}
+
+hr {
+    color: $dividerColor;
+    opacity: 0.3;
+    @include mb();
 }

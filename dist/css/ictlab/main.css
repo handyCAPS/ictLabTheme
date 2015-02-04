@@ -319,51 +319,17 @@ $CLEARFIX
   width: 100%;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07); }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/ictlab\/dev\/scss\/ictlab\/objects\/_panel\.scss}line{font-family:\0000311}}
+  .panel h2, .panel h3 {
+    padding: 1rem 1.618rem 0;
+    color: #f44336;
+    font-weight: normal;
+    margin-bottom: 0.809rem; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/ictlab\/dev\/scss\/ictlab\/objects\/_panel\.scss}line{font-family:\0000317}}
   .panel p {
     padding: 0 1.618rem; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/ictlab\/dev\/scss\/ictlab\/objects\/_panel\.scss}line{font-family:\0000313}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/ictlab\/dev\/scss\/ictlab\/objects\/_panel\.scss}line{font-family:\0000319}}
     .panel p:not(:last-of-type) {
       margin-bottom: 1.618rem; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/ictlab\/dev\/scss\/ictlab\/objects\/_panel\.scss}line{font-family:\0000319}}
-.panel--header {
-  position: relative;
-  vertical-align: middle;
-  padding: 1rem 1.618rem 0;
-  color: #f44336;
-  font-weight: normal;
-  margin-bottom: 0.809rem; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/ictlab\/dev\/scss\/ictlab\/objects\/_panel\.scss}line{font-family:\0000326}}
-  .panel--header:after {
-    position: absolute;
-    right: 0;
-    top: 0;
-    content: '';
-    border: calc(1em - 1px) solid transparent;
-    border-right-color: #f44336;
-    border-top-color: #f44336; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/ictlab\/dev\/scss\/ictlab\/objects\/_triple\.scss}line{font-family:\000033}}
-.triple-wrap {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: stretch;
-      -ms-flex-pack: stretch;
-          justify-content: stretch;
-  margin-bottom: 1.618rem; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/ictlab\/dev\/scss\/ictlab\/objects\/_triple\.scss}line{font-family:\000039}}
-.triple {
-  display: inline-block;
-  width: calc(33.333333% - 1.618rem / 2);
-  border: 1px solid black; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/ictlab\/dev\/scss\/ictlab\/objects\/_triple\.scss}line{font-family:\0000313}}
-  .triple:not(:last-of-type) {
-    margin-right: 1.618rem; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/ictlab\/dev\/scss\/ictlab\/objects\/_triple\.scss}line{font-family:\0000316}}
-  .triple p {
-    color: #727272; }
 
 /*-------------------*\
 
@@ -397,7 +363,6 @@ body {
   font-family: "Fira Sans", sans-serif;
   font-size: 16px;
   font-weight: 300;
-  color: #212121;
   text-rendering: optimizeLegibility;
   background-color: #f4f4f4; }
   @media screen and (min-width: 1200px) {
@@ -405,41 +370,41 @@ body {
     body {
       font-size: 20px; } }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/ictlab\/dev\/scss\/ictlab\/_body\.scss}line{font-family:\0000327}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/ictlab\/dev\/scss\/ictlab\/_body\.scss}line{font-family:\0000326}}
 #contentWrap {
   padding: 0 1.618rem; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/ictlab\/dev\/scss\/ictlab\/_body\.scss}line{font-family:\0000332}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/ictlab\/dev\/scss\/ictlab\/_body\.scss}line{font-family:\0000331}}
 h1, h2, h3, h4, h5, h6 {
   font-family: "Poly", serif;
   font-size: 1.618rem;
   margin: 0;
   margin-bottom: 1.618rem; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/ictlab\/dev\/scss\/ictlab\/_body\.scss}line{font-family:\0000339}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/ictlab\/dev\/scss\/ictlab\/_body\.scss}line{font-family:\0000338}}
 h1 {
   font-size: 4.2358rem; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/ictlab\/dev\/scss\/ictlab\/_body\.scss}line{font-family:\0000343}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/ictlab\/dev\/scss\/ictlab\/_body\.scss}line{font-family:\0000342}}
 h2 {
   font-size: 2.61792rem; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/ictlab\/dev\/scss\/ictlab\/_body\.scss}line{font-family:\0000348}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/ictlab\/dev\/scss\/ictlab\/_body\.scss}line{font-family:\0000347}}
 p {
   margin: 0;
   padding: 0;
   margin-bottom: 1.618rem;
   line-height: 1.45; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/ictlab\/dev\/scss\/ictlab\/_body\.scss}line{font-family:\0000355}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/ictlab\/dev\/scss\/ictlab\/_body\.scss}line{font-family:\0000354}}
 a {
   color: #03a9f4;
   text-decoration: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/ictlab\/dev\/scss\/ictlab\/_body\.scss}line{font-family:\0000358}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/ictlab\/dev\/scss\/ictlab\/_body\.scss}line{font-family:\0000357}}
   a:hover {
     color: #02638f; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/ictlab\/dev\/scss\/ictlab\/_body\.scss}line{font-family:\0000363}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/ictlab\/dev\/scss\/ictlab\/_body\.scss}line{font-family:\0000362}}
 hr {
   color: #b6b6b6;
   opacity: 0.3;

@@ -33,6 +33,11 @@ module.exports = function(grunt) {
         dist: Path.scss.dist
     };
 
+    Path.remote = {
+        theme: '../wpictlab/wp-content/themes',
+        plugin: '../wpictlab/wp-content/plugins'
+    };
+
   // Project configuration.
   grunt.initConfig({
     // Metadata.

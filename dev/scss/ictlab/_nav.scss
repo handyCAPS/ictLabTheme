@@ -24,7 +24,7 @@
 .nav--item {
     transition: 0.3s;
         &:hover, &:focus {
-            background-color: $primaryColor;
+            background-color: $darkPrimaryColor;
                 a {
                     color: $textPrimaryColor;
                 }
@@ -39,11 +39,19 @@
 }
 
 .nav--item__top {
+    box-shadow: inset 0px 0px 0px 0px $darkPrimaryColor;
     float: left;
         a {
             color: $textPrimaryColor;
         }
-        &:hover, &:focus {
+        &:hover, &:focus, &.current {
+            background-color: $primaryColor;
+            box-shadow: inset 0px (- modScale(3)) + px 0px 0px $darkPrimaryColor;
+        }
+        &.current {
+            box-shadow: inset 0px (- modScale(3)) + px 0px 0px darken($darkPrimaryColor,10);
+        }
+        &:active {
             background-color: $darkPrimaryColor;
         }
 }
@@ -52,7 +60,7 @@
     box-shadow: 0 2px 2px -2px $dividerColor;
     position: relative;
         a {
-            padding-left: modScale(2) + modScale(2) + rem;
+            padding-left: modScale(2) * 2 + rem;
         }
         &:before {
             content: '\f07b'; // fa-folder

@@ -79,24 +79,9 @@
     <div id="contentWrap">
 
 
-        <section class="triple-wrap">
-
-            <div class="triple">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, pariatur adipisci! Repellat sint amet, earum nihil, officiis minima, aut, libero delectus suscipit assumenda est facere. Doloremque totam sit perferendis, rerum accusantium suscipit sunt, neque quasi unde velit ea cumque. Culpa repellendus quibusdam qui quas enim, nemo laborum! Placeat, voluptate impedit?</p>
-            </div><!--
-             --><div class="triple">
-                <p>Nemo eligendi quos ipsum mollitia a sit reiciendis tempore nostrum repudiandae corrupti, ea quaerat, aut ut, vitae eius quo autem totam expedita! Suscipit numquam dolore odit aliquid sit aspernatur earum tenetur obcaecati pariatur at velit consequuntur soluta, ducimus, dicta, eligendi nemo. In pariatur commodi quas molestias, odio ea. Quos, eaque.</p>
-            </div><!--
-             --><div class="triple">
-                <p>Consequuntur officiis ipsa molestiae earum sapiente similique porro, iste, provident delectus, omnis accusamus tempore sint totam amet at cumque, distinctio odio. Magnam, excepturi. Molestiae at nihil nulla ab cupiditate totam nobis laboriosam iure, quo unde autem eaque dolorum, commodi sed temporibus illum aliquam animi eos architecto vero a id dignissimos.</p>
-            </div>
-
-        </section>
-
-
         <section class="content content-left">
             <article class="panel">
-                <h2 class="panel--header">This is a panel</h2>
+                <h2>This is a panel</h2>
                 <hr>
                 <p class="panel--text">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis voluptatibus non maiores molestiae officia numquam reprehenderit, vel, culpa animi vero voluptatem suscipit, dolore dolores velit provident cumque! Fugit ut, voluptatibus! Fi fi fl
@@ -111,7 +96,7 @@
          --><section class="content content-right">
 
             <article class="panel panel--sidebar">
-                <h3 class="panel--header panel--header__sidebar">This is a sidebar panel</h3>
+                <h3>This is a sidebar panel</h3>
                 <hr>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem corporis iure vel minus. Quas eos laborum atque debitis. Veniam, consequatur?</p>
             </article>

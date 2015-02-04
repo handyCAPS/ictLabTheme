@@ -4,8 +4,16 @@
 
     $total: $base;
 
-    @for $i from 1 through $n {
-        $total: $total * $ratio;
+    @if $n > 0 {
+        @for $i from 1 through $n {
+            $total: $total * $ratio;
+        }
+    }
+
+    @if $n < 0 {
+        @for $i from 0 through $n + 1 {
+            $total: $total / $ratio;
+        }
     }
 
     @return $total;
@@ -27,5 +35,5 @@
 }
 
 @mixin longshadow($color, $n) {
-  text-shadow: makelongshadow($color, $n);
+    text-shadow: makelongshadow($color, $n);
 }

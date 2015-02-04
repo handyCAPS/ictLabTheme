@@ -1,0 +1,19 @@
+
+
+.triple-wrap {
+    display: flex;
+    justify-content: stretch;
+    @include mb();
+}
+
+.triple {
+    display: inline-block;
+    width: calc(33.333333% - #{$gutter} / 2);
+    border: 1px solid black;
+        &:not(:last-of-type) {
+            margin-right: $gutter;
+        }
+        p {
+            color: $secondaryTextColor;
+        }
+}

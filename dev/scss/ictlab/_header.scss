@@ -3,13 +3,13 @@
 
 .search-wrap {
     position: absolute;
-    top: 0.7rem;
+    top: calc(50% - #{modScale(0) + rem});
     left: modScale(1) + rem;
     color: $textPrimaryColor;
         i {
             position: absolute;
-            top: 0.35rem;
-            right: 0.7rem;
+            top: modScale(-2) + rem;
+            right: modScale(-1) + rem;
             vertical-align: baseline;
         }
 }
@@ -17,7 +17,7 @@
 .search--input {
     border: none;
     border-radius: 1rem;
-    padding: 0.25rem 0.618rem;
+    padding: modScale(-3) + rem modScale(-1) + rem;
     background-color: $darkPrimaryColor;
 }
 
