@@ -320,12 +320,10 @@ $CLEARFIX
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07); }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/ictlab\/dev\/scss\/ictlab\/objects\/_panel\.scss}line{font-family:\0000311}}
   .panel p {
-    padding: 0 1.618rem; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/ictlab\/dev\/scss\/ictlab\/objects\/_panel\.scss}line{font-family:\0000313}}
-    .panel p:not(:last-of-type) {
-      margin-bottom: 1.618rem; }
+    padding: 0 1.618rem;
+    margin-bottom: 1.618rem; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/ictlab\/dev\/scss\/ictlab\/objects\/_panel\.scss}line{font-family:\0000319}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/ictlab\/dev\/scss\/ictlab\/objects\/_panel\.scss}line{font-family:\0000317}}
 .panel--header {
   position: relative;
   vertical-align: middle;
@@ -333,7 +331,7 @@ $CLEARFIX
   color: #f44336;
   font-weight: normal;
   margin-bottom: 0.809rem; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/ictlab\/dev\/scss\/ictlab\/objects\/_panel\.scss}line{font-family:\0000326}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/ictlab\/dev\/scss\/ictlab\/objects\/_panel\.scss}line{font-family:\0000324}}
   .panel--header:after {
     position: absolute;
     right: 0;
@@ -357,19 +355,36 @@ $CLEARFIX
 .triple {
   display: inline-block;
   width: calc(33.333333% - 1.618rem / 2);
-  border: 1px solid black; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/ictlab\/dev\/scss\/ictlab\/objects\/_triple\.scss}line{font-family:\0000313}}
+  padding: 0 1.618rem;
+  -webkit-hyphens: auto;
+     -moz-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/ictlab\/dev\/scss\/ictlab\/objects\/_triple\.scss}line{font-family:\0000314}}
   .triple:not(:last-of-type) {
     margin-right: 1.618rem; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/ictlab\/dev\/scss\/ictlab\/objects\/_triple\.scss}line{font-family:\0000316}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/ictlab\/dev\/scss\/ictlab\/objects\/_triple\.scss}line{font-family:\0000317}}
   .triple p {
     color: #727272; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/ictlab\/dev\/scss\/ictlab\/objects\/_triple\.scss}line{font-family:\0000322}}
+.triple-icon {
+  color: #727272;
+  font-size: 4.2358rem;
+  vertical-align: top; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/ictlab\/dev\/scss\/ictlab\/objects\/_triple\.scss}line{font-family:\0000326}}
+  .triple-icon:before {
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.07); }
 
 /*-------------------*\
 
     DABBLE
 
 \*-------------------*/
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/ictlab\/dev\/scss\/ictlab\/_dabble\.scss}line{font-family:\000034}}
+.mb-double {
+  margin-bottom: 3.236rem; }
+
 /*-------------------*\
 
     BODY
@@ -413,33 +428,36 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Poly", serif;
   font-size: 1.618rem;
+  color: #f44336;
   margin: 0;
   margin-bottom: 1.618rem; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/ictlab\/dev\/scss\/ictlab\/_body\.scss}line{font-family:\0000339}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/ictlab\/dev\/scss\/ictlab\/_body\.scss}line{font-family:\0000340}}
 h1 {
   font-size: 4.2358rem; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/ictlab\/dev\/scss\/ictlab\/_body\.scss}line{font-family:\0000343}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/ictlab\/dev\/scss\/ictlab\/_body\.scss}line{font-family:\0000344}}
 h2 {
   font-size: 2.61792rem; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/ictlab\/dev\/scss\/ictlab\/_body\.scss}line{font-family:\0000348}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/ictlab\/dev\/scss\/ictlab\/_body\.scss}line{font-family:\0000349}}
 p {
   margin: 0;
   padding: 0;
-  margin-bottom: 1.618rem;
   line-height: 1.45; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/ictlab\/dev\/scss\/ictlab\/_body\.scss}line{font-family:\0000353}}
+  p:not(:last-of-type) {
+    margin-bottom: 1.618rem; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/ictlab\/dev\/scss\/ictlab\/_body\.scss}line{font-family:\0000355}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/ictlab\/dev\/scss\/ictlab\/_body\.scss}line{font-family:\0000358}}
 a {
   color: #03a9f4;
   text-decoration: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/ictlab\/dev\/scss\/ictlab\/_body\.scss}line{font-family:\0000358}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/ictlab\/dev\/scss\/ictlab\/_body\.scss}line{font-family:\0000361}}
   a:hover {
     color: #02638f; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/ictlab\/dev\/scss\/ictlab\/_body\.scss}line{font-family:\0000363}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/ictlab\/dev\/scss\/ictlab\/_body\.scss}line{font-family:\0000366}}
 hr {
   color: #b6b6b6;
   opacity: 0.3;
@@ -554,7 +572,7 @@ hr {
   background-image: url("../../img/mountains.jpg");
   background-size: cover;
   background-position: center 25%;
-  margin-bottom: 1.618rem; }
+  margin-bottom: 3.236rem; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/ictlab\/dev\/scss\/ictlab\/_header\.scss}line{font-family:\0000335}}
 .header--action {
@@ -581,7 +599,8 @@ hr {
   .headline-wrap h1, .headline-wrap h2 {
     display: inline-block;
     vertical-align: middle;
-    max-width: 75%; }
+    max-width: 75%;
+    color: white; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/ictlab\/dev\/scss\/ictlab\/_content\.scss}line{font-family:\000033}}
 .content {

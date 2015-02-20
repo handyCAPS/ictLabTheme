@@ -32,6 +32,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: $headerFont;
     font-size: modScale(1) + rem;
+    color: $primaryColor;
     margin: 0;
     @include mb();
 }
@@ -48,8 +49,10 @@ h2 {
 p {
     margin: 0;
     padding: 0;
-    @include mb();
     line-height: 1.45;
+        &:not(:last-of-type) {
+            @include mb();
+        }
 }
 
 a {

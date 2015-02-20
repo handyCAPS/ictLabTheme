@@ -29,7 +29,7 @@
     background-image: url('../../img/mountains.jpg');;
     background-size: cover;
     background-position: center 25%;
-    @include mb();
+    @include mb(2);
 }
 
 .header--action {
@@ -56,5 +56,6 @@
             display: inline-block;
             vertical-align: middle;
             max-width: 75%;
+            color: $textPrimaryColor;
         }
 }
