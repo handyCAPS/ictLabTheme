@@ -9,4 +9,12 @@
 .logo {
     width: modScale(6) + rem;
     vertical-align: middle;
+
+        @media screen and (max-width: 800px) {
+            width: modScale(5) + rem;
+        }
+
+        @media screen and (max-width: 600px)  {
+            width: modScale(4) + rem;
+        }
 }

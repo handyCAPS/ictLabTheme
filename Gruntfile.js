@@ -33,9 +33,10 @@ module.exports = function(grunt) {
         dist: Path.scss.dist
     };
 
-    Path.remote = {
-        theme: '../wpictlab/wp-content/themes',
-        plugin: '../wpictlab/wp-content/plugins'
+    Path.wp = {
+        theme: 'dev/theme',
+        themeRemote: '../wpictlab/wp-content/themes/ictlab',
+        pluginRemote: '../wpictlab/wp-content/plugins'
     };
 
   // Project configuration.
@@ -169,6 +170,36 @@ module.exports = function(grunt) {
                     });
                 }
             }
+        },
+        themePHP: {
+            expand: true,
+            cwd: '<%= Path.dev %>/php',
+            src: '**/*.php',
+            dest: '<%= Path.wp.theme %>'
+        },
+        themeStyles: {
+            expand: true,
+            flatten: true,
+            src: ['<%= Path.css.dev %>/**/*.css'],
+            dest: '<%= Path.wp.theme %>/css/<%= pkg.name %>'
+        },
+        themeJS: {
+            expand: true,
+            flatten: true,
+            src: '<%= Path.js.dev %>/**/*.js',
+            dest: '<%= Path.wp.theme %>/js'
+        },
+        themeIMG: {
+            expand: true,
+            cwd: '<%= Path.dev %>/img',
+            src: '**/*.{jpg,png,gif}',
+            dest: '<%= Path.wp.theme %>/img'
+        },
+        theme: {
+            expand: true,
+            cwd: '<%= Path.wp.theme %>',
+            src: '**/*.*',
+            dest: '<%= Path.wp.themeRemote %>'
         }
     },
     watch: {
@@ -188,7 +219,8 @@ module.exports = function(grunt) {
         tasks: ['sass:dev', 'autoprefixer:dev']
       },
       htmlPHP: {
-        files: '<%= Path.dev %>/**/*{.php,.html}'
+        files: '<%= Path.dev %>/**/*{.php,.html}',
+        tasks: ['themePrep']
       }
     }
   });
@@ -198,5 +230,7 @@ module.exports = function(grunt) {
 
   // Default task.
   grunt.registerTask('default', ['jshint', 'concat', 'uglify']);
+
+  grunt.registerTask('themePrep', ['copy:themeIMG', 'copy:themeStyles', 'copy:themeJS', 'copy:themePHP', 'copy:theme']);
 
 };

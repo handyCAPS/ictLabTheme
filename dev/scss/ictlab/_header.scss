@@ -30,6 +30,9 @@
     background-size: cover;
     background-position: center 25%;
     @include mb(2);
+        @media screen and (max-width: 800px) {
+            @include mb();
+        }
 }
 
 .header--action {
@@ -51,11 +54,16 @@
     position: absolute;
     bottom: 0;
     font-weight: normal;
+}
+
+.tagline {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 75%;
+    color: $textPrimaryColor;
     @include longshadow($dividerColor, 4);
-        h1, h2 {
-            display: inline-block;
-            vertical-align: middle;
-            max-width: 75%;
-            color: $textPrimaryColor;
+
+        @media screen and (max-width: 800px) {
+            font-size: modScale(2) + rem;
         }
 }

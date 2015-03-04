@@ -4,6 +4,9 @@
     display: flex;
     justify-content: stretch;
     @include mb();
+        @media screen and(max-width: 800px) {
+            display: block;
+        }
 }
 
 .triple {
@@ -17,13 +20,34 @@
         p {
             color: $secondaryTextColor;
         }
+
+        @media screen and (max-width: 800px) {
+            display: block;
+            width: 100%;
+            @include mb();
+        }
 }
 
 .triple-icon {
     color: $secondaryTextColor;
-    font-size: modScale(3) + rem;
+    font-size: modScale(2) + rem;
     vertical-align: top;
+    @include mb(0.5);
         &:before {
             text-shadow: 0px 1px 2px $shadowColor;
         }
+
+        @media screen and (min-width: 1400px) {
+            font-size: modScale(3) + rem;
+        }
+
+        @media screen and (max-width: 800px) {
+            font-size: modScale(1) + rem;
+        }
+}
+
+.triple-header {
+    border-bottom: 2px solid $dividerColor;
+    margin-bottom: $marginBottom / 2;
+    padding-bottom: $marginBottom / 2;
 }
