@@ -212,11 +212,11 @@ module.exports = function(grunt) {
       },
       js: {
         files: [ '<%= Path.js.dev %>/**/*.js', '<%= Path.js.test %>/**/*_spec.js'],
-        tasks: ['jshint:dev_test', 'jasmine']
+        tasks: ['jshint:dev_test', 'jasmine', 'themePrep']
       },
       sass: {
         files: '<%= Path.scss.src %>/**/*.scss',
-        tasks: ['sass:dev', 'autoprefixer:dev']
+        tasks: ['sass:dev', 'autoprefixer:dev', 'themePrep']
       },
       htmlPHP: {
         files: '<%= Path.dev %>/**/*{.php,.html}',

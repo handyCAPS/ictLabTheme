@@ -7,11 +7,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title><?php
-    if (is_home()) {
-        echo bloginfo('name');
-    } else {
-        echo the_title() . ' | ' . bloginfo('name');
-    }
+        if (is_home()) {
+            echo bloginfo('name');
+        } else {
+            echo wp_title( '|', true, 'right' ) . bloginfo('name');
+        }
      ?></title>
     <meta name="description" content="<?php bloginfo('description'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,19 +30,34 @@
 
     <div id="outerWrap">
 
-    <header class="header--hero" role="banner">
+    <header class="header--hero<?php if (is_page()) echo ' page' ?>" role="banner">
 
         <section class="top-bar">
 
-            <nav class="nav nav-horizontal nav-main">
-                <ul class="nav--list nav--list__top">
-                    <li class="nav--item nav--item__top current"><a href="#">Home</a></li>
-                    <li class="nav--item nav--item__top"><a href="#">About</a></li>
-                    <li class="nav--item nav--item__top"><a href="#">History</a></li>
-                    <li class="nav--item nav--item__top"><a href="#">Blog</a></li>
-                    <li class="nav--item nav--item__top"><a href="#">Contact</a></li>
-                </ul>
-            </nav>
+            <?php
+
+            $defaults = array(
+                'theme_location'  => '',
+                'menu'            => 'main_menu',
+                'container'       => 'nav',
+                'container_class' => 'nav nav-horizontal nav-main',
+                'container_id'    => '',
+                'menu_class'      => 'menu nav--list nav--list__top',
+                'menu_id'         => '',
+                'echo'            => true,
+                'fallback_cb'     => 'wp_page_menu',
+                'before'          => '',
+                'after'           => '',
+                'link_before'     => '',
+                'link_after'      => '',
+                'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+                'depth'           => 0,
+                'walker'          => ''
+            );
+
+            wp_nav_menu( $defaults );
+
+            ?>
 
             <div class="search-wrap">
                 <form method="POST" action="" class="search--form">
@@ -70,8 +85,14 @@
 
         <div class="headline-wrap">
             <h1 class="tagline">
-                ICT-Lab <br>
-                Alphen aan den Rijn
+                <?php
+                    if (is_home()) {
+                        bloginfo('name'); ?><br><?php
+                        bloginfo('description');
+                    } else {
+                        echo the_title();
+                    }
+                ?>
             </h1>
         </div>
 

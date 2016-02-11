@@ -7,27 +7,32 @@
     display: inline-block;
     color: $primaryTextColor;
     width: 100%;
-    box-shadow: 0 1px 2px $shadowColor;
+    box-shadow: 0 5px 10px $shadowColor;
         p {
             padding: 0 modScale(1) + rem;
             @include mb();
+        }
+        hr {
+            margin-top: 0;
         }
 }
 
 .panel--header {
     position: relative;
     vertical-align: middle;
-    padding: modScale(0) + rem modScale(1) + rem 0;
+    padding: modScale(0) + rem modScale(1) + rem;
     color: $primaryColor;
     font-weight: normal;
-    @include mb(0.5);
-        &:after {
-            position: absolute;
-            right:0;
-            top: 0;
-            content: '';
-            border: calc(1em - 1px) solid transparent;
-            border-right-color: $primaryColor;
-            border-top-color: $primaryColor;
-        }
+    overflow: hidden;
+    border-bottom: 2px solid $primaryColor;
+    @include mb(1);
+        // &:after {
+        //     position: absolute;
+        //     right: -29px;
+        //     top: 0;
+        //     content: '';
+        //     border: 1.35em solid transparent;
+        //     border-right-color: $primaryColor;
+        //     border-top-color: $primaryColor;
+        // }
 }

@@ -33,6 +33,10 @@
         @media screen and (max-width: 800px) {
             @include mb();
         }
+        &.page {
+            height: modScale(6) + modScale(3) + rem;
+            background-attachment: fixed;
+        }
 }
 
 .header--action {

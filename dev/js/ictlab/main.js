@@ -86,7 +86,7 @@
             sideHeight = parseFloat(getStyle(hSide, 'height'));
 
         function getWidth(height) {
-            return (height * 0.618) - 1;
+            return (height * 0.68);
         }
 
         function getRule(el, width) {
@@ -102,7 +102,7 @@
 
     function init() {
 
-        styleHCorners();
+        // styleHCorners();
 
     }
 

@@ -23,7 +23,7 @@
 
 .nav--item {
     transition: 0.3s;
-        &:hover, &:focus {
+        &:hover, &:focus, &.current-menu-item {
             background-color: $darkPrimaryColor;
                 a {
                     color: $textPrimaryColor;
